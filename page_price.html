@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="page_price.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body class="bg-white">
+    <!-- Pop Up -->
+    <div class="popup" id="popup">
+        <div class="overlay"></div>
+        <div class="container content ">
+            <div class="row">
+                <div class="col-7" data-imagesrc="image/iphone-12-pro-max-blue.png"
+                    data-proimagesrc="./Image/pro-blur.png">
+
+                    <div class="container text-left p-0 sticky-top d-flex flex-column align-items-center" style="line-height: 8px;">
+
+                        <img class="iphone-echange" id="phone_choose" src="./Image/all_iphone_12_pro.jpeg" alt="">
+
+                        <!-- <h6 class="new pt-4">New</h6>
+                        <h1>Buy iPhone 12 Pro</h1>
+                        <p class="mt-3" style="font-size: 17px;">Get up to $370 off with Apple Trade In*</p>
+                        <a style="font-size: 16px;" href="">See how trade-in works</a> -->
+
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="col-4 d-flex justify-content-center flex-column">
+                    <h2 class="mb-4" style="font-weight: 200px;">Informations :</h2>
+
+                        <div  class="col mr-3  mt-0 d-flex flex-column  d-flex flex-column justify-content-center align-items-center mb-2 border" style="max-height: 93px;">
+                            <p class="m-2">Category :</p>
+                            <h3 class="" id="phone-final" style="font-size: 24px; font-weight: 300; color: #000000cc">iPhone 12 Pro Max</h3>
+
+
+                        </div>
+
+
+
+                    <div class="bloc-choice-final d-flex justify-content-between flex-wrap">
+<!--                        <a class="flex-column d-flex justify-content-center align-items-center border" id="color-final" style="font-size: 30px; font-weight: 300; color: #000000cc;">-->
+<!--                            <p class="mb-1">Color :</p>-->
+<!--                            Gold</a>-->
+
+                        <a class="btn-capacities">
+                            <div  class=" btn-capacity col colors border mr-3  mt-0 d-flex flex-column  d-flex flex-column justify-content-center align-items-center" style="height: 105px;">
+                                <p class="m-2">Color :</p>
+                                <h3 class="" id="color-final" style="font-weight: 300; color: #000000cc">Gold</h3>
+
+
+                            </div>
+                        </a>
+
+                        <a class="btn-capacities">
+                            <div id="512" class=" btn-capacity col colors border mr-3  mt-0 d-flex flex-column  d-flex flex-column justify-content-center align-items-center" style="height: 105px;">
+                                <p class="m-2">Memory :</p>
+                                <h3 class="" id="stockage-final" style="font-weight: 300; color: #000000cc">512GB⁴</h3>
+
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="mt-4 close-btn btn btn-continue btn-primary btn-lg" onclick="togglePopup()" style="color: white;">Buy Now</div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Fin Pop Up -->
+
+    <div class="container-fluid p-0">
+        <div class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container navbar">
+                <a class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="44" viewBox="0 0 16 44">
+                        <path
+                            d="M8.02 16.23c-.73 0-1.86-.83-3.05-.8-1.57.02-3.01.91-3.82 2.32-1.63 2.83-.42 7.01 1.17 9.31.78 1.12 1.7 2.38 2.92 2.34 1.17-.05 1.61-.76 3.03-.76 1.41 0 1.81.76 3.05.73 1.26-.02 2.06-1.14 2.83-2.27.89-1.3 1.26-2.56 1.28-2.63-.03-.01-2.45-.94-2.48-3.74-.02-2.34 1.91-3.46 2-3.51-1.1-1.61-2.79-1.79-3.38-1.83-1.54-.12-2.83.84-3.55.84zm2.6-2.36c.65-.78 1.08-1.87.96-2.95-.93.04-2.05.62-2.72 1.4-.6.69-1.12 1.8-.98 2.86 1.03.08 2.09-.53 2.74-1.31"
+                            fill="#fff">
+                    </svg>
+                </a>
+                <svg width="1em" id="shop-nav" height="1em" viewBox="0 0 16 16" class="bi bi-bag" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z" />
+                </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mac <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">iPad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">iPhone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Watch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
+        </div>
+
+
+        <div class="container-fluid barr-fluid border after pr-5 pl-5 bg-white ">
+            <div class="container barr-white align-items-center pr-2.5 pl-5 d-flex justify-content-between ">
+                <h5 class="m-0" href="">iPhone 12 Pro</h5>
+                <h6 class="m-0" href="">From $41.62/mo. or $999 before trade in*</h6>
+            </div>
+        </div>
+        <div class="container-fluid barr-fluid bg-light after pr-5 pl-5">
+            <div class="container barr-time-price align-items-center pr-2.5 pl-5 d-flex justify-content-center ">
+                <p class="m-0 text-time-price">$5 for 2-hour delivery on eligible products for a limited time. Available
+                    in most metros. See checkout for details.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-white border border-top-0">
+        <div class="container big-content-page">
+            <div class="container text-center card-compagny">
+                <h6 class="pt-4" id="title-compagnies">Special Carrier Trade‑in Offers at Apple</h6>
+                <div class="card-compagny container d-flex justify-content-around pb-4">
+
+                    <div class="card card-compagnies border-0" style="width: 18rem;">
+                        <div class="card-body card-text  p-0">
+                            <h6 class="title-compagny card-title font-weight-normal mb-1 mt-2">AT&T</h6>
+                            <p class="card-text m-0 font-weight-lighter mb-1">Pay from $9.97/mo. after T&T bill
+                                credits.1</p>
+                            <a href="#" class="">See offer details</a>
+                        </div>
+                    </div>
+
+
+                    <div class="card card-compagnies border-0" style="width: 18rem;">
+                        <div class="card-body card-text  p-0">
+                            <h6 class="title-compagny card-title font-weight-normal mb-1 mt-2">T-Mobile/Sprint</h6>
+                            <p class="card-text m-0 font-weight-lighter mb-1">Get an additional $150 trade-in credit
+                                from T‑Mobile/Sprint.º</p>
+                            <a href="#" class="">See offer details</a>
+                        </div>
+                    </div>
+
+
+                    <div class="card card-compagnies border-0" style="width: 18rem;">
+                        <div class="card-body card-text  p-0">
+                            <h6 class="title-compagny card-title font-weight-normal mb-1 mt-2">Verizon</h6>
+                            <p class="card-text m-0 font-weight-lighter mb-1">Pay from $23.29/mo. after Verizon bill
+                                credits.2</p>
+                            <a href="#" class="">See offer details</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <div class="container-fluid bg-white big-content-page">
+        <div class="container text-center card-compagny">
+
+            <div class="content-price content-iphone d-flex">
+
+                <div class="container text-center card-compagny d-flex p-0">
+                    <div class="col-6 p-0">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                aria-labelledby="list-home-list" style="height:2100px;">
+                                <div class="container text-left pt-3 d-flex flex-column align-items-center sticky-top " style="line-height: 8px;">
+                                    <img class="iphone-echange " id="phone_default"
+                                        src="./Image/iphone-12-pro-family-hero.jpeg" alt="">
+
+                                    <!-- <h6 class="new pt-4">New</h6>
+                                    <h1>Buy iPhone 12 Pro</h1>
+                                    <p class="mt-3" style="font-size: 17px;">Get up to $370 off with Apple Trade In*</p>
+                                    <a style="font-size: 16px;" href="">See how trade-in works</a> -->
+                                    <a href="#choice" data-type="phonePro" class="none-hover w-100 ml-2 border-bottom mt-0 d-flex justify-content-around align-items-center hover-content  mb-3" style="color: black">
+                                        <div class="content-one d-flex flex-column align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" width="23px"><g><path d="m511.9 126.269c-.598-5.507-4.02-10.381-9.135-12.768l-240-112c-4.289-2.001-9.243-2.001-13.532 0l-240 112c-5.114 2.387-8.536 7.26-9.135 12.768-.013.115-.098 1.647-.098 1.731v272c0 6.542 3.983 12.426 10.058 14.855l240 96c1.907.763 3.925 1.145 5.942 1.145s4.035-.381 5.942-1.145l240-96c6.075-2.429 10.058-8.313 10.058-14.855v-272c0-.084-.087-1.617-.1-1.731zm-255.9-92.613 199.744 93.214-76.914 30.766-203.503-86.332zm-119.69 55.856 200.346 84.993-80.656 32.262-199.744-79.897zm-104.31 62.12 208 83.2v237.535l-208-83.2zm240 320.736v-237.536l208-83.2v237.535z"/></g></svg>
+
+                                            <p class="mt-3 mb-4">Fast, free, no-contact delivery</p>
+                                        </div>
+                                        <div class="content-two d-flex flex-column align-items-center text-right">
+                                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" width="23px"><g><path d="m511.9 126.269c-.598-5.507-4.02-10.381-9.135-12.768l-240-112c-4.289-2.001-9.243-2.001-13.532 0l-240 112c-5.114 2.387-8.536 7.26-9.135 12.768-.013.115-.098 1.647-.098 1.731v272c0 6.542 3.983 12.426 10.058 14.855l240 96c1.907.763 3.925 1.145 5.942 1.145s4.035-.381 5.942-1.145l240-96c6.075-2.429 10.058-8.313 10.058-14.855v-272c0-.084-.087-1.617-.1-1.731zm-255.9-92.613 199.744 93.214-76.914 30.766-203.503-86.332zm-119.69 55.856 200.346 84.993-80.656 32.262-199.744-79.897zm-104.31 62.12 208 83.2v237.535l-208-83.2zm240 320.736v-237.536l208-83.2v237.535z"/></g></svg>
+                                            <p class="mt-3 mb-4">Free and easy returns</p>
+                                        </div>
+                                    </a>
+                                    <a  class="none-hover w-40 d-flex justify-content-between align-items-center pt-2 ml-4" >
+                                        <div class="content-one">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; width: 33px;" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<path d="M446.165,324.459C488.128,293.973,512,250.048,512,202.667c0-88.235-83.733-160-186.667-160     c-83.072,0-154.88,45.803-178.731,113.963c-1.941,5.568,0.981,11.648,6.549,13.589c5.568,1.941,11.627-1.003,13.589-6.549     C187.264,104.981,252.48,64,325.333,64c91.157,0,165.333,62.208,165.333,138.667c0,42.923-23.339,82.773-64.021,109.355     c-4.544,2.965-6.123,8.853-3.712,13.696l10.432,20.885l-30.187-17.259c-2.795-1.6-6.123-1.813-9.131-0.704     c-14.613,5.632-30.4,9.451-46.869,11.328c-5.845,0.661-10.048,5.952-9.387,11.797s5.739,10.091,11.797,9.387     c16.491-1.856,32.384-5.504,47.317-10.816l56.448,32.256c1.664,0.96,3.477,1.408,5.291,1.408c2.667,0,5.312-1.003,7.339-2.923     c3.413-3.221,4.331-8.32,2.219-12.523L446.165,324.459z"/>
+            <path d="M160,191.979c-88.235,0-160,57.408-160,128c0,38.037,21.483,74.283,57.92,98.475l-14.507,36.245     c-1.643,4.117-0.576,8.811,2.688,11.819c2.005,1.856,4.587,2.816,7.211,2.816c1.621,0,3.264-0.363,4.8-1.131l52.885-26.453     c16.043,4.139,32.512,6.229,49.003,6.229c88.235,0,160-57.408,160-128C320,249.387,248.235,191.979,160,191.979z      M159.957,426.667c-15.936,0-31.829-2.197-47.253-6.528c-2.56-0.704-5.291-0.469-7.659,0.725l-31.424,15.701l7.403-18.475     c1.963-4.907,0.043-10.496-4.523-13.163C41.429,384.448,21.312,353.493,21.312,320c0-58.816,62.208-106.667,138.667-106.667     S298.624,261.184,298.624,320C298.624,378.816,236.416,426.667,159.957,426.667z"/>
+		</g>
+	</g>
+</g>
+                                                <g>
+</g>
+                                                <g>
+</g>
+                                                <g>
+</g>
+                                                <g>
+</g>
+                                                <g>
+</g>
+                                                <g>
+</g>
+                                                <g>
+</g>
+                                                <g>
+</g>
+                                                <g>
+</g>
+                                                <g>
+</g>
+                                                <g>
+</g>
+                                                <g>
+</g>
+                                                <g>
+</g>
+                                                <g>
+</g>
+                                                <g>
+</g>
+</svg>
+                                        </div>
+                                        <div class="content-two text-start">
+                                            <p class="m-0 ml-2" style="line-height: 17px; color: black">
+                                                Have questions about buying an iPhone? <br> <span>Chat with an iPhone Specialist</span></p>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <!--                        <div class="tab-pane fade" style="height: 1950px;" id="list-profile" role="tabpanel"-->
+                            <!--                             aria-labelledby="list-profile-list"><img class="iphone-echange sticky-top"-->
+                            <!--                                                                      src="./Image/iphone-12-pro-max-silver.png" alt="">-->
+                            <!--                        </div>-->
+                            <!--                        <div class="tab-pane fade" style="height: 1950px;" id="list-messages" role="tabpanel"-->
+                            <!--                             aria-labelledby="list-messages-list"><img class="iphone-echange sticky-top"-->
+                            <!--                                                                       src="./Image/iphone_gold.png" alt=""></div>-->
+                            <!--                        <div class="tab-pane fade" style="height: 1950px;" id="list-settings" role="tabpanel"-->
+                            <!--                             aria-labelledby="list-settings-list"><img class="iphone-echange sticky-top"-->
+                            <!--                                                                       src="./Image/iphone-12-pro-max-blue.png" alt="">-->
+                            <!--                        </div>-->
+                            <!---->
+                            <!---------------------------- Iphone 12 Pro Choice ------------------------>
+                        </div>
+                    </div>
+                    <div class="col-6">
+
+                        <div class="container pr-0 content-modif">
+                            <div class="container text-left pt-3 " style="line-height: 8px;">
+
+                                <h6 class="new pt-4">New</h6>
+                                <h1>Buy iPhone 12 Pro</h1>
+                                <p class="mt-3" style="font-size: 17px;">Get up to $370 off with Apple Trade In*</p>
+                                <a style="font-size: 16px;" href="">See how trade-in works</a>
+
+                            </div>
+                            <div class="selector-iphone container text-left pr-0 pt-5">
+
+                                <h6 id="choice" class="pt-2">Choose your model.</h6>
+                                <a href="">Which model is right for you?</a>
+                                <a href="#choice" data-type="phonePro"
+                                    class="list-group-item activor bg-trans-hover choice-type-phone choice-type-phone mt-3 rounded d-flex justify-content-between align-items-center list-group-item-action mb-3 border"
+                                    id="phone_pro" data-toggle="list" role="tab" aria-controls="messages">
+                                    <div class="content-one">
+                                        <h6 class="name-pro" class="m-0">iPhone 12 Pro</h6>
+                                        <p class="m-0">6.1-inch display</p>
+                                    </div>
+                                    <div class="content-two text-right">
+                                        <h6>From $41.62/mo <br> or $999 before trade-in*</h6>
+                                    </div>
+                                </a>
+                                <a data-type="phoneProMax"
+                                    class="list-group-item activor bg-trans-hover choice-type-phone mt-3 rounded d-flex justify-content-between align-items-center list-group-item-action mb-3 border"
+                                    id="phone_pro_max" data-toggle="list" data-type="iphone_pro_max" href="#" role="tab"
+                                    aria-controls="messages">
+                                    <div class="content-one">
+                                        <h6 class="name-pro" class="m-0">iPhone 12 Pro Max</h6>
+                                        <p class="m-0">6.7-inch display³</p>
+                                    </div>
+                                    <div class="content-two text-right ">
+                                        <h6>From $45.79/mo. <br>or $1099 before trade-in*</h6>
+                                    </div>
+                                </a>
+
+
+                                <div id="separator"
+                                    class="content-prices d-flex border-bottom justify-content-between mt-4 d-flex align-items-center">
+                                </div>
+
+
+                            </div>
+                            <div class="selector-iphone container text-left pt-4 pr-0 box-opacity" id="box-color">
+                                <h5>Choose your finish.</h5>
+                                <div class="content-prices d-flex justify-content-between mt-3">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="container d-flex flex-wrap list-group d-flex content-color-product"
+                                                id="list-tab" role="tablist">
+                                                <a class="list-group-item activor bg-trans-hover link-color-product  rounded flex-column  d-flex justify-content-center align-items-center list-group-item-action mb-3 border"
+                                                    id="Graphite" data-imagesrc="image/iphone-12-pro-graphite.png"
+                                                    data-proimagesrc="./Image/pro-graphite.png" data-toggle="list"
+                                                    data-color="graphite" href="#list-profile" role="tab"
+                                                    aria-controls="messages">
+                                                    <img src="./Image/iphone-finish-graphite-2020.jpeg" alt=""
+                                                        class="mb-1" style="height: 32px; width: 32px;">
+                                                    Graphite</a>
+
+                                                <a class="list-group-item activor bg-trans-hover link-color-product  rounded flex-column  d-flex justify-content-center align-items-center list-group-item-action mb-3 border"
+                                                    id="Silver" data-imagesrc="image/iphone-12-pro-max-silver.png"
+                                                    data-toggle="list" data-color="" href="#list-profile" role="tab"
+                                                    data-proimagesrc="./Image/pro-silver.png" aria-controls="messages">
+                                                    <img src="./Image/iphone-finish-silver-2020.jpeg" alt=""
+                                                        class="mb-1" style="height: 32px; width: 32px;">
+                                                    Silver</a>
+                                                <a class="list-group-item activor bg-trans-hover link-color-product  rounded flex-column  d-flex justify-content-center align-items-center list-group-item-action mb-3 border"
+                                                    id="Gold" data-imagesrc="image/iphone-12-pro-max-gold.png"
+                                                    data-proimagesrc="./Image/pro-gold.png" data-toggle="list"
+                                                    data-color="gold" href="#list-messages" role="tab"
+                                                    aria-controls="messages">
+                                                    <img src="./Image/iphone-finish-gold-2020.jpeg" alt="" class="mb-1"
+                                                        style="height: 32px; width: 32px;">
+                                                    Gold</a>
+                                                <a class="list-group-item activor bg-trans-hover link-color-product  rounded flex-column  d-flex justify-content-center align-items-center list-group-item-action mb-3 border"
+                                                    id="Blue" data-imagesrc="image/iphone-12-pro-max-blue.png"
+                                                    data-proimagesrc="./Image/pro-blur.png" data-toggle="list"
+                                                    data-color="blue" href="#list-settings" role="tab"
+                                                    aria-controls="settings">
+                                                    <img src="./Image/iphone-finish-blue-2020.jpeg" alt="" class="mb-1"
+                                                        style="height: 32px; width: 32px;">
+                                                    Pacific Blue</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="container text-left pr-0">
+                                <div id="separator"
+                                    class="content-prices d-flex border-bottom justify-content-between mt-4 d-flex align-items-center">
+                                </div>
+
+                                <h6 class="mt-4">Choose your carrier.</h6>
+                                <p>We’ll work with the carrier you choose to activate your new iPhone so you can keep
+                                    your number. For 5G service, some carriers may require an upgrade to a 5G plan.</p>
+                                <a href="">Compare all pricing and special offers</a>
+
+
+
+                                <div class="container text-left mt-0  p-0 box-opacity" id="network">
+
+                                    <div class="content-prices d-flex justify-content-between mt-3">
+                                        <div class="container">
+                                            <div class="row ">
+                                                <!-- <p>
+                                                <a class="btn btn-primary" data-bs-toggle="collapse"
+                                                    href="#collapseExample" role="button" aria-expanded="false"
+                                                    aria-controls="collapseExample">
+                                                    Link with href
+                                                </a>
+                                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseExample" aria-expanded="false"
+                                                    aria-controls="collapseExample">
+                                                    Button with data-bs-target
+                                                </button>
+                                            </p>
+                                            <div class="collapse" id="collapseExample">
+                                                <div class="card card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                    terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                                                    labore wes anderson cred nesciunt sapiente ea proident.
+                                                </div>
+                                            </div> -->
+                                                <div id=""
+                                                    class="col colors box-networks cursor rounded border mr-3  mt-4 d-flex flex-column  d-flex flex-column justify-content-center align-items-center"
+                                                    style="height: auto;" data-marques="">
+
+                                                    <p class=" link-box-compagny mb-1 m-0 mt-3">Special Offers Available
+                                                    </p>
+                                                    <div class="mt-1"><img src="./Image/logo-att-2x.png" alt=""></div>
+                                                    <p class="text-link-compagmy text-center pr-2 pl-2 mt-2">From
+                                                        $45.79/mo.per month or $1099 before trade-in*</p>
+                                                </div>
+                                                <div id=""
+                                                    class="col colors box-networks cursor rounded border  mt-4 d-flex flex-column  d-flex flex-column justify-content-center align-items-center"
+                                                    style="height: auto;">
+
+                                                    <p class=" link-box-compagny mb-1 m-0 mt-3">Special Offers Available
+                                                    </p>
+                                                    <div class="mt-1"><img src="./Image/logo-sprint-2x.png" alt="">
+                                                    </div>
+                                                    <p class="text-link-compagmy text-center pr-2 pl-2 mt-2">From
+                                                        $45.79/mo.per month or $1099 before trade-in*</p>
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div id=""
+                                                    class="col colors box-networks cursor rounded border mr-3  mt-3 d-flex flex-column  d-flex flex-column justify-content-center align-items-center"
+                                                    style="height: auto;">
+
+                                                    <p class=" link-box-compagny mb-1 m-0 mt-3">Special Offers Available
+                                                    </p>
+                                                    <div class="mt-1"><img src="./Image/logo-tmobile-2x.png" alt="">
+                                                    </div>
+                                                    <p class="text-link-compagmy text-center pr-2 pl-2 mt-2">From
+                                                        $45.79/mo.per month or $1099 before trade-in*</p>
+                                                </div>
+                                                <div id=""
+                                                    class="col colors box-networks cursor rounded border  mt-3 d-flex flex-column  d-flex flex-column justify-content-center align-items-center"
+                                                    style="height: auto;">
+
+                                                    <p class=" link-box-compagny mb-1 m-0 mt-3">Special Offers Available
+                                                    </p>
+                                                    <div class="mt-1"><img src="./Image/logo-verizon-2x.png" alt="">
+                                                    </div>
+                                                    <p class="text-link-compagmy text-center pr-2 pl-2 mt-2">From
+                                                        $45.79/mo.per month or $1099 before trade-in*</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div
+                                        class="box-networks cursor ncontent-prices rounded py-3 d-flex border justify-content-center flex-column mt-3 d-flex align-items-center">
+                                        <div class="pt-2 pb-2 content-one ">
+                                            <h6 class="m-0">SIM-free - activate with any carrier later.</h6>
+                                            <p class="m-0 text-link-compagmy text-center pt-1">From $45.79/mo.per month
+                                                or
+                                                $1099 before trade-in*</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <p class="pt-3">
+                                    All iPhone models are unlocked except those purchased with AT&amp;T Installment
+                                    Plans.
+                                </p>
+                                <div id="separator"
+                                    class="content-prices d-flex border-bottom justify-content-between mt-4 d-flex align-items-center">
+                                </div>
+                                <div class="container p-0 text-left pr-0 box-opacity " id="memories">
+                                    <h6 class="mt-4">Choose your capacity.</h6>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <a class="" href="">
+                                        How much capacity is right for you?
+                                    </a>
+
+
+
+
+                                    <div class="nav d-flex justify-content-between flex-wrap mt-3" id="" role="tablist">
+                                        <a class="activor btn-capacities mt-3" style="height: auto;" id="#"
+                                            data-toggle="pill" href="#v-pills-home" role="tab" aria-selected="true"
+                                            style="height: fit-content">
+                                            <div id="128"
+                                                class="btn-capacity col rounded colors border mr-3  mt-0 d-flex flex-column  d-flex flex-column justify-content-center align-items-center"
+                                                style="height: auto; ;">
+
+                                                <h3 class="mt-3" style="font-weight: 300;">128GB⁴</h3>
+
+                                                <p class="text-link-compagmy text-center pr-2 pl-2">From
+                                                    $58.29/mo.per
+                                                    month or $1399 before trade-in*</p>
+                                            </div>
+                                        </a>
+                                        <a class="activor btn-capacities mt-3" id="#" data-toggle="pill"
+                                            href="#v-pills-profile" role="tab" aria-selected="false"
+                                            style="height: fit-content">
+                                            <div id="256"
+                                                class="btn-capacity col rounded colors border  mt-0 d-flex flex-column  d-flex flex-column justify-content-center align-items-center"
+                                                style="height: auto; ;">
+
+                                                <h3 class="mt-3" style="font-weight: 300;">256GB⁴</h3>
+
+                                                <p class="text-link-compagmy text-center pr-2 pl-2">From
+                                                    $58.29/mo.per
+                                                    month or $1399 before trade-in*</p>
+                                            </div>
+                                        </a>
+
+
+
+
+                                        <a class="activor btn-capacities mt-3" id="#" data-toggle="pill"
+                                            href="#v-pills-messages" role="tab" aria-selected="false"
+                                            style="height: fit-content">
+                                            <div id="512"
+                                                class="btn-capacity col rounded colors border mr-3  mt-0 d-flex flex-column  d-flex flex-column justify-content-center align-items-center"
+                                                style="height: auto; ;">
+
+                                                <h3 class="mt-3" style="font-weight: 300;">512GB⁴</h3>
+
+                                                <p class="text-link-compagmy text-center pr-2 pl-2">From
+                                                    $58.29/mo.per
+                                                    month or $1399 before trade-in*</p>
+                                            </div>
+                                        </a>
+
+
+
+
+
+
+
+                                    </div>
+                                    <div class="container w-100">
+
+                                    </div>
+
+
+                                </div>
+                                <div id="separator "
+                                    class="content-prices d-flex border-bottom justify-content-between mt-4 d-flex align-items-center box-opacity">
+                                </div>
+                                <div class="container p-0 text-left pr-0" id="choice">
+                                    <h6 class="mt-4">Do you have a smartphone to trade in with Apple?</h6>
+
+                                    <a href="">
+                                        See how trade-in work
+                                    </a>
+                                    <div class="container ">
+                                        <div class="row">
+                                            <p class="w-100 d-flex justify-content-between">
+
+
+                                                <button class="btn-valid  mt-3 p-4" id="btn-non">
+                                                    No
+                                                </button>
+                                                <button class="btn-valid button-opacity mt-3 p-4" type="button"
+                                                    data-toggle="collapse" data-target="#collapseExample"
+                                                    aria-expanded="false" aria-controls="collapseExample" id="btn-oui">
+                                                    Yes
+                                                </button>
+
+                                            </p>
+                                            <div class="collapse" id="collapseExample">
+                                                <div class="card box-body-card card-body border-0">
+                                                    <h6 style="font-size: 14px;font-weight: 600; ">Which model do you
+                                                        have?</h6>
+                                                    <p>On your iPhone, go to Settings > Your Name. Scroll down to see
+                                                        the model. On other smartphones, go to Settings > About phone.
+                                                    </p>
+                                                    <p class="mt-1">On your iPhone, go to Settings > Your Name. Scroll
+                                                        down to see
+                                                        the model. On other smartphones, go to Settings > About phone.
+                                                        <a href=""> check your upgrade eligibility and trade in.
+                                                        </a>
+                                                    </p>
+                                                    <div class="form-group">
+                                                        <label class="label-choice-phone"
+                                                            for="exampleFormControlSelect1"
+                                                            placeholder="Choose your model">Choose your model</label>
+                                                        <select class="select-phone form-control pt-4"
+                                                            id="exampleFormControlSelect1">
+                                                            <option>Select</option>
+                                                            <option>iPhone 11 Pro Max - Up to $500</option>
+                                                            <option>iPhone 11 Pro Max - Up to $500</option>
+                                                            <option>iPhone 11 Pro Max - Up to $500</option>
+                                                            <option>iPhone 11 Pro Max - Up to $500</option>
+                                                            <option>iPhone 11 Pro Max - Up to $500</option>
+                                                            <option>iPhone 11 Pro Max - Up to $500</option>
+                                                            <option>iPhone 11 Pro Max - Up to $500</option>
+                                                            <option>iPhone 11 Pro Max - Up to $500</option>
+                                                            <option>iPhone 11 Pro Max - Up to $500</option>
+                                                            <option>iPhone 11 Pro Max - Up to $500</option>
+                                                            <option>iPhone 11 Pro Max - Up to $500</option>
+                                                            <option>iPhone 11 Pro Max - Up to $500</option>
+                                                            <option>iPhone 11 Pro Max - Up to $500</option>
+                                                            <option>iPhone 11 Pro Max - Up to $500</option>
+                                                            <option>iPhone 11 Pro Max - Up to $500</option>
+                                                            <option>iPhone 11 Pro Max - Up to $500</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                    <div
+                                        class="bg-light content-prices py-3 d-flex justify-content-center flex-column mt-3 d-flex align-items-center">
+                                        <div class="pt-3 pb-3 content-one">
+                                            <a href="#" class="close-btn  btn btn-continue btn-primary btn-lg"
+                                                role="button" aria-pressed="true" onclick="togglePopup()">Continue</a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="container text-center mt-5">
+                <h1>
+                    What’s in the Box
+                </h1>
+            </div>
+            <div class="container bg-light mt-5">
+                <img class="mr-5" id="iphone-var-color" src="./Image/iphone-12-pro-blue-witb.jpeg" alt=""
+                    style="width: 170px;">
+                <img class="ml-5" src="./Image/iphone-12-pro-cable-witb.jpeg" alt="">
+            </div>
+            <div class="container pl-5pr-5 m-0 d-flex justify-content-center">
+                <h6 class="mt-4" style="margin-left: 110px; font-size: 13px;font-weight: 400;">iPhone</h6>
+                <h6 class="mt-4" style="margin-left: 82px;padding-left: 47px;font-size: 13px;font-weight: 400;">USB-C to
+                    Lightning Cable</h6>
+            </div>
+            <div class="">
+                <p class="mt-5" style="font-size: 14px; color: #0000009e;">As part of our efforts to reach <a href=""
+                        style="font-size: 14px;">
+                        our environmental goals</a> , iPhone 12 Pro and iPhone 12 Pro Max do
+                    not include a power adapter or EarPods. Included in the box is a USB‑C to Lightning cable that
+                    supports fast charging and is compatible with USB‑C power adapters and computer ports.</p>
+                <p class="mt-4" style="font-size: 14px; color: #0000009e;">We encourage you to re‑use your current USB‑A
+                    to Lightning cables, power adapters, and headphones which are compatible with these iPhone models.
+                    But if you need any new Apple power adapters or headphones, they are available for purchase.</p>
+            </div>
+
+
+            <!-- <div class="row box-bottom">
+                        <div class="d-flex flex-column pr-0 col-12 col-md-7">
+
+                            <img class="image-content ml-4" src="./Image/iphone-12-pro-blue-witb.jpeg">
+
+                        </div>
+
+
+                        <div class="col-6 col-md-5  border p-0">
+                            <img class="image-content ml-4" src="./Image/iphone-12-pro-blue-witb.jpeg">
+                        </div>
+                    </div> -->
+
+        </div>
+
+
+    </div>
+
+    <div id="carouselExampleFade" class="mt-5 carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+        <ol class="carousel-indicators mb-2">
+            <li class="point-slide active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+            <li class="point-slide" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li class="point-slide" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li class="point-slide" data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li class="point-slide" data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="./Image/iphone-12-pro-gallery-1.jpeg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./Image/iphone-12-pro-gallery-2.jpeg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./Image/iphone-12-pro-gallery-3.jpeg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./Image/iphone-12-pro-gallery-4.jpeg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./Image/iphone-12-pro-gallery-5_GEO_US.jpeg" alt="Third slide">
+            </div>
+        </div>
+        <a class="point-slide-action point-previous carousel-control-prev" href="#carouselExampleFade" role="button"
+            data-slide="prev">
+            <span class="" aria-hidden="true">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+            </span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="point-slide-action point-next carousel-control-next" href="#carouselExampleFade" role="button"
+            data-slide="next">
+            <span class="" aria-hidden="true">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </div>
+    <div class="container card-compagny d-flex justify-content-center flex-column align-items-center">
+
+        <h1 class="mt-5">
+            MagSafe. Everything just clicks.
+        </h1>
+        <h6 class="text-center mt-3" style="font-weight: 300; line-height: 25px;">MagSafe is a new ecosystem of
+            accessories for easy attachment and faster wireless charging. <br> With endless combinations, there is a mix
+            to match any style.</h6>
+        <a href="" style="font-size: 16px;">Shop MagSafe accessories
+            <svg style="width: 10px;" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </a>
+        <div class="mt-3" style="width: 100%;">
+            <img class="pr-4 pl-4" src="./Image/iphone-pro-magsafe-202010.jpeg" alt="" style="width: inherit;">
+        </div>
+
+    </div>
+
+
+    </div>
+    <div class="row container-fluid bg-light pt-5 m-0">
+        <div class="container card-compagny d-flex compare-phone">
+            <div class="col-6 d-flex justify-content-end mt-3 pr-0">
+                <img src="./Image/iphone-compare-models-202010_GEO_US.jpeg" alt="">
+            </div>
+            <div class="col-6 d-flex justify-content-center align-items-center flex-column mt-5">
+                <div class="title-iphone-compare d-flex justify-content-start">
+                    <h1 class="text-center mr-5 pr-5">Compare <br> iPhone models.</h1>
+                </div>
+                <div class="container link-iphone-compare text-center">
+                    <a href="" class="mr-5 pr-5" style="font-size: 16px;">Find the best iPhone for you
+                        <svg style="width: 10px;" width="1em" height="1em" viewBox="0 0 16 16"
+                            class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <div class="container-fluid d-flex justify-content-center bg-white border border-bottom-0 m-0">
+        <div class="container card-compagny accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header border-0">
+                    <h2 id="size">Frequently Asked Questions
+                    </h2>
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content p-0">
+
+
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header size-cross size-cross hover-content m-0 p-0 active">
+                                <a style="font-size: 14px;">
+                                    How can I get a 5G connection on my iPhone 12?
+                                </a>
+                            </div>
+                            <div class="accordion-item-body" style="max-height: 129px;">
+                                <div class="accordion-item-body-content">
+
+                                    All iPhone 12 and iPhone 12 Pro models are 5G capable. For 5G access, you need to
+                                    activate your iPhone with a carrier that <br> offers 5G service. Some carriers may
+                                    also
+                                    require a 5G service plan or a new SIM. Contact your carrier for more <br>
+                                    information.
+                                    To learn more, visit <a href="">https://support.apple.com/en-us/HT204039</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header size-cross hover-content">
+                                <a style="font-size: 14px;">
+
+                                    Which U.S. wireless carriers offer 5G service?
+
+                                </a>
+
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    AT&T, Sprint, T-Mobile, and Verizon are the national wireless carriers for iPhone in
+                                    the United States, and they all offer 5G <br>
+                                    service. Apple.com and the Apple Store sell iPhone models for use on these networks.
+                                    <div class="links-map d-flex flex-column ">
+                                        <a href="" class="mt-3">View the AT&T 5G coverage map <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" fill=" currentColor"
+                                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg></a>
+
+                                        <a href="" class="mt-2">View the Sprint 5G coverage map <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" fill=" currentColor"
+                                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg></a>
+                                        <a href="" class="mt-2">View the T-Mobile 5G coverage map <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" fill=" currentColor"
+                                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg></a>
+                                        <a href="" class="mt-2">View the Verizon 5G coverage map <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" fill=" currentColor"
+                                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg></a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header size-cross hover-content">
+                                    <a style="font-size: 14px;">
+
+                                        What does “SIM-free” mean?
+
+                                    </a>
+
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        “SIM-free” means your iPhone doesn’t ship with a carrier nano-SIM. The SIM-free
+                                        iPhone sold on apple.com and at the <br> Apple Store is unlocked. That means you
+                                        can use a nano-SIM or eSIM from any carrier that provides service for iPhone.*
+                                        <p class="mt-3" style="font-size: 14px;">* Use of eSIM requires a wireless
+                                            service plan (which may include restrictions on switching service providers
+                                            and roaming, <br> even after contract expiration). Not all carriers support
+                                            eSIM. Use of eSIM in iPhone may be disabled when purchased from <br> some
+                                            carriers. See your carrier for details. To learn more, visit <a
+                                                href="">support.apple.com/en-us/HT209044.</a></p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header size-cross hover-content">
+                                    <a style="font-size: 14px;">
+                                        What is eSIM?
+                                    </a>
+
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        eSIM technology allows you to add a cellular plan to your iPhone without using a
+                                        nano-SIM card. Activating an eSIM will <br> require scanning a valid QR code
+                                        distributed by a wireless carrier, or signing up for a participating plan
+                                        through a wireless <br> carrier app.*
+                                        <p class="mt-3" style="font-size: 14px;">* Use of eSIM requires a wireless
+                                            service plan (which may include restrictions on switching service providers
+                                            and roaming, <br> even after contract expiration). Not all carriers support
+                                            eSIM. Use of eSIM in iPhone may be disabled when purchased from <br> some
+                                            carriers. See your carrier for details. To learn more, visit <a
+                                                href="">support.apple.com/en-us/HT209044.</a></p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header size-cross hover-content">
+                                    <a style="font-size: 14px;">
+                                        When I buy an iPhone from Apple, will the eSIM be activated?
+                                    </a>
+
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+
+                                        Carrier-connected models of iPhone purchased from Apple come with a physical
+                                        nano-SIM, which will be used to activate <br> your wireless account. To activate
+                                        the eSIM on your new iPhone, please contact your carrier once you receive it.*
+                                        <p class="mt-3" style="font-size: 14px;">* Use of eSIM requires a wireless
+                                            service plan (which may include restrictions on switching service providers
+                                            and roaming, <br> even after contract expiration). Not all carriers support
+                                            eSIM. Use of eSIM in iPhone may be disabled when purchased from <br> some
+                                            carriers. See your carrier for details. To learn more, visit <a
+                                                href="">support.apple.com/en-us/HT209044.</a></p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header size-cross hover-content">
+                                    <a style="font-size: 14px;">
+                                        Are there differences between an iPhone for AT&T, T-Mobile, Sprint, or Verizon?
+                                    </a>
+
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        <p class="mt-3" style="font-size: 14px;">The iPhone models for AT&T, T-Mobile,
+                                            Sprint, and Verizon are the same. If you choose to pay with an AT&T
+                                            Installment <br> plan, your iPhone will be locked to the carrier. For
+                                            details on network support, please see <a href="">
+                                                https://support.apple.com/en-<br>us/HT204039.</a></p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header size-cross hover-content">
+                                    <a style="font-size: 14px;">
+                                        When I buy from apple.com, does my iPhone come ready to use?
+                                    </a>
+
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+
+                                        If you completed the steps to authorize activation with AT&T, Sprint, T-Mobile,
+                                        or Verizon when you purchased your new <br> iPhone online, it will arrive ready
+                                        to use. Just turn it on and follow the onscreen instructions to set it up and
+                                        activate with <br> the carrier. If you chose to skip carrier authorization at
+                                        the time of purchase, you’ll need to contact your carrier or visit an <br> Apple
+                                        Store to enable cellular services.
+                                        <p class="mt-3" style="font-size: 14px;">You can also set up your iPhone without
+                                            a nano-SIM using Wi-Fi. You will need an active nano-SIM to enable cellular
+                                            <br> services. If you selected the SIM-free iPhone, you’ll need to insert
+                                            your own nano-SIM card or obtain one from the <br> supported carrier of your
+                                            choice and activate it in order to use cellular services on your iPhone. If
+                                            Sprint is your carrier, <br> you’ll need to get a new nano-SIM card in order
+                                            to activate your iPhone 12 or iPhone 12 Pro.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header size-cross hover-content">
+                                    <a style="font-size: 14px;">
+                                        Will my new iPhone be unlocked?
+                                    </a>
+
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+
+                                        All iPhone models sold on apple.com and at the Apple Store are unlocked, which
+                                        means they aren’t tied to a single carrier, <br> and you can use a SIM from the
+                                        carrier of your choosing. The exception is when you buy an iPhone with an AT&T
+                                        <br> Installment Plan. It will be locked to AT&T as the carrier and will only
+                                        work on the AT&T network for the term of your <br> Installment Plan agreement.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header size-cross hover-content">
+                                    <a style="font-size: 14px;">
+                                        What purchase options are there for buying an iPhone?
+                                    </a>
+
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        <p class="mt-3" style="font-size: 14px;">You can either pay for your new iPhone
+                                            in full or pay monthly with Apple Card Monthly Installments, carrier
+                                            financing, Apple <br> iPhone Payments, or the iPhone Upgrade Program. If you
+                                            choose an Apple monthly payment option, your carrier service <br> plan will
+                                            be charged separately. Just choose the option that works for you.</p>
+                                        <a href="">Learn more about payment options
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10px" fill=" currentColor"
+                                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg></a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header size-cross hover-content">
+                                    <a style="font-size: 14px;">
+                                        How can I get a 5G connection on my iPhone 12?
+                                    </a>
+
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellat in
+                                        error eos
+                                        corporis
+                                        sint aperiam vel sequi possimus, voluptas quam provident a totam culpa facere,
+                                        eius
+                                        explicabo
+                                        cumque. Dolorum.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis eum magnam
+                                        cum!
+                                        Saepe
+                                        doloribus
+                                        distinctio magnam maxime ea accusamus, architecto tenetur amet, consequuntur
+                                        quaerat
+                                        sunt
+                                        aut
+                                        laborum rerum explicabo.
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header size-cross hover-content">
+                                    <a style="font-size: 14px;">
+                                        How can I get a 5G connection on my iPhone 12?
+                                    </a>
+
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellat in
+                                        error eos
+                                        corporis
+                                        sint aperiam vel sequi possimus, voluptas quam provident a totam culpa facere,
+                                        eius
+                                        explicabo
+                                        cumque. Dolorum.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis eum magnam
+                                        cum!
+                                        Saepe
+                                        doloribus
+                                        distinctio magnam maxime ea accusamus, architecto tenetur amet, consequuntur
+                                        quaerat
+                                        sunt
+                                        aut
+                                        laborum rerum explicabo.
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header size-cross hover-content">
+                                    <a style="font-size: 14px;">
+                                        Which U.S. wireless carriers offer 5G service?
+                                    </a>
+
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        AT&T, Sprint, T-Mobile, and Verizon are the national wireless carriers for
+                                        iPhone in
+                                        the United States, and they all offer 5G <br>
+                                        service. Apple.com and the Apple Store sell iPhone models for use on these
+                                        networks.
+                                        <div class="links-map">
+                                            <a href="">View the AT&T 5G coverage map <svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                </svg></a>
+                                            <a href="">View the Sprint 5G coverage map <svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                </svg></a>
+                                            <a href="">View the T-Mobile 5G coverage map <svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                </svg></a>
+                                            <a href="">View the Verizon 5G coverage map <svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                </svg></a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="page_price.js"></script>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/1ff0c3e133.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

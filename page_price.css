@@ -1,0 +1,376 @@
+body {
+  background: #f2f2f2;
+}
+ul.navbar-nav {
+  margin-left: 67px;
+}
+.navbar {
+  padding: 0;
+}
+#title-compagnies {
+  font-size: 18px;
+  font-weight: 600;
+}
+p {
+  font-size: 12px;
+}
+a {
+  font-size: 13px;
+}
+/******* Navbar ********/
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+  background: #333 !important;
+}
+.navbar {
+  padding-right: 75px;
+  padding-left: 75px;
+  height: 44px;
+}
+svg {
+  opacity: 80%;
+  transition: 0.5s;
+}
+svg:hover {
+  opacity: 100%;
+}
+a.nav-link {
+  color: rgba(255, 255, 255, 0.69) !important;
+  font-size: 14px;
+  font-weight: 100;
+  height: 100%;
+  transition: 0.5s;
+}
+a.nav-link:hover {
+  color: #ffffffe3 !important;
+}
+ul.navbar-nav {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url(Image/Daco_3884885.png);
+  width: 30px;
+  height: 17px;
+  opacity: 88%;
+  outline: none;
+}
+button.navbar-toggler {
+  outline: none !important;
+  border: none;
+}
+svg#shop-nav {
+  color: #ffffffcc;
+  position: absolute;
+  right: 0;
+}
+/************* Barre ************/
+.barr-white {
+  padding-left: 82px !important;
+  padding-right: 97px;
+  height: 47px;
+}
+.text-time-price {
+  font-size: 11px !important;
+  letter-spacing: 0.4px;
+  color: #000000b3;
+  font-weight: 500;
+}
+.barr-time-price {
+  height: 34px;
+}
+/******************* Spécial Carrier *****************/
+.card-compagnies {
+  width: 22% !important;
+}
+.card-compagny {
+  padding-right: 57px;
+  padding-left: 57px;
+}
+.title-compagny {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500 !important;
+}
+.card-text p {
+  font-size: 13px;
+  color: black;
+}
+.card-text a {
+  font-size: 13px;
+}
+a.bg-trans-hover:hover {
+  background: transparent !important;
+}
+/******************** Buy iPhone 12 Pro ********************/
+.btn-valid {
+  width: 48%;
+  height: 100px;
+  background: transparent;
+  border: 0.5px solid #80808042;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.select-phone {
+  height: 58px;
+}
+.label-choice-phone {
+  font-size: 12px;
+  line-height: 1.75;
+  position: absolute;
+  bottom: 58px;
+  left: 37px;
+  color: #666;
+}
+.box-body-card {
+  background: #f2f2f2;
+}
+.choice-type-phone {
+  height: 85px;
+}
+.btn-capacities {
+  width: 48% !important;
+  color: black;
+}
+.btn-capacities:hover {
+  text-decoration: solid;
+  color: black;
+}
+.box-opacity {
+  opacity: 0.5 !important;
+}
+.iphone-echange {
+  padding-left: 22px !important;
+  width: 492px;
+  height: 556px;
+}
+.content-modif {
+  padding-left: 51px !important;
+}
+.active.activor {
+  color: black !important;
+  background-color: transparent !important;
+  border: 2px solid #0070c9 !important;
+}
+.box-bottom {
+  width: 100%;
+}
+.content-prices {
+  width: 100%;
+}
+#separator {
+  height: 0px;
+}
+.content-color-product {
+  flex-direction: inherit;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+}
+.link-color-product {
+  height: 105px;
+  width: 48.5%;
+}
+.image-content {
+  height: 556px;
+  width: 82%;
+}
+.box-infos-phone {
+  padding-left: 0 !important;
+}
+.color {
+  height: 33px;
+  width: 33px;
+  border: solid 1px grey;
+}
+.color-rounded {
+  height: 32px;
+}
+.colors {
+  height: 118px;
+}
+.cursor {
+  cursor: pointer;
+}
+.box-active {
+  border: 2px solid #0070c9 !important;
+}
+.rounded {
+  transition: 1ms;
+}
+.rounded:hover {
+  border: 1px solid #00000073 !important;
+}
+/***************** Box compagny ********************/
+.link-box-compagny {
+  font-size: 10px;
+  color: var(--orange);
+}
+.text-link-compagmy {
+  font-size: 10px;
+  font-weight: 400;
+}
+.btn-continue {
+  padding: 2px 128px;
+  font-size: 17px;
+  font-weight: 300;
+  background-color: #0070c9;
+  background: linear-gradient(#42a1ec, #0070c9);
+  border-color: #07c;
+}
+.btn-continue {
+  padding: 2px 128px;
+  font-size: 17px;
+  font-weight: 300;
+  background-color: #0070c9;
+  background: linear-gradient(#42a1ec, #0070c9);
+  border-color: #07c;
+}
+.new {
+  color: var(--orange);
+}
+/******************** Slide ********************/
+.point-slide {
+  width: 8px !important;
+  border: solid transparent;
+  border-radius: 50%;
+  height: 8px !important;
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+  margin: 0;
+}
+.point-slide-action {
+  top: 50%;
+  border: solid transparent;
+  height: 49px;
+  width: 4%;
+  border-radius: 50%;
+  background: grey;
+}
+.point-next {
+  right: 18px;
+}
+.point-previous {
+  left: 18px;
+}
+/************** Accordéon ****************/
+#size {
+  font-size: 33px;
+}
+.hover-content {
+  transition: 300ms;
+}
+.hover-content:hover {
+  color: #147bcd;
+}
+.size-cross.accordion-item-header::after {
+  font-size: 2rem;
+  transition: 300ms;
+}
+.size-cross.accordion-item-header::after:hover {
+  color: #147bcd;
+}
+.accordion {
+  background-color: white;
+  color: black;
+  margin: 1rem 0;
+}
+.accordion-item-header {
+  justify-content: space-between;
+  padding: 0.5rem 0 0.5rem 0;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin: 19px 0;
+  border-top: 0.5px solid #80808030;
+}
+.accordion-item-header::after {
+  font-weight: 300;
+  color: #888888;
+  content: "\002B";
+  font-size: 4rem;
+  position: absolute;
+  right: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+.accordion-item-header.active::after {
+  /* content: "\2212"; */
+  transform: rotate(45deg);
+  color: #888888;
+}
+.accordion-item-body {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease;
+}
+.accordion-item-body-content {
+  /* display: none; */
+  padding: 1rem 0 1rem 0;
+  line-height: 1.5rem;
+  /* border-top: 0.5px solid #80808030; */
+  font-size: 14px;
+  font-weight: 300;
+}
+.compare-phone {
+  padding-bottom: 57px;
+}
+
+/*************** Pop up *******************/
+.none-hover{
+  cursor: default;
+}
+.none-hover:hover{
+  text-decoration: none;
+}
+.btn-continue {
+  padding: 2px 128px;
+  font-size: 17px;
+  font-weight: 300;
+  background-color: #0070c9;
+  background: linear-gradient(#42a1ec, #0070c9);
+  border-color: #07c;
+}
+.popup .overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+  display: none;
+}
+.popup .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 70%;
+  height: 600px;
+  z-index: 10000;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.popup .close-btn {
+  width: 100%;
+  padding: 2px;
+  font-size: 17px;
+  font-weight: 300;
+  background-color: #0070c9;
+  background: linear-gradient(#42a1ec, #0070c9);
+  border-color: #07c;
+}
+
+.popup.active .overlay {
+  display: block;
+}
+
+.popup.active .content {
+  transform: translate(-50%, -50%);
+  overflow: overlay;
+}
