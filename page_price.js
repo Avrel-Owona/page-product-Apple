@@ -31,7 +31,6 @@ var stockFinal = document.getElementById("stockage-final");
 var colorFinal = document.getElementById("color-final");
 var nameFinal = document.querySelectorAll(".name-pro");
 
-
 // colors.forEach((color) => {
 //   selectedColor.addEventListener("cliclk", (event) => {
 //     selectedColor = color.id;
@@ -87,7 +86,7 @@ colors.forEach(function (color) {
       image.src = color.dataset.proimagesrc;
     }
     imagePop.src = image.src;
-    colorFinal.innerText = selectedColor
+    colorFinal.innerText = selectedColor;
     product.color = selectedColor;
     console.log(product);
   });
@@ -146,7 +145,7 @@ capacities.forEach(function (capacity) {
 
 var changeOpacity = function (elementID) {
   var element = document.getElementById(elementID);
-  element.style.opacity ="1"
+  element.style.opacity = "1";
 };
 
 // ================== Pop up ==================>
